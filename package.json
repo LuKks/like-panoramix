@@ -1,16 +1,26 @@
 {
-  "name": "panoramix",
-  "version": "1.0.0",
-  "description": "",
+  "name": "like-panoramix",
+  "version": "0.0.0",
+  "description": "EVM decompiler wrapper for Node.js",
   "main": "index.js",
-  "dependencies": {
-    "ansi-regex": "^6.0.1",
-    "strip-ansi": "^6.0.1"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "standard && brittle test.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LuKks/like-panoramix.git"
+  },
+  "author": "Lucas Barrena (LuKks)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LuKks/like-panoramix/issues"
+  },
+  "homepage": "https://github.com/LuKks/like-panoramix#readme",
+  "devDependencies": {
+    "brittle": "^3.3.2",
+    "standard": "^17.1.0"
+  },
+  "dependencies": {
+    "ansi-match": "^1.0.0"
+  }
 }
