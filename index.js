@@ -23,6 +23,7 @@ module.exports = class Panoramix {
 
       const worker = spawn('panoramix', [contractAddress], {
         env: {
+          ...process.env,
           WEB3_PROVIDER_URI: this.provider
         }
       })
