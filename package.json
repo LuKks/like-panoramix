@@ -1,6 +1,6 @@
 {
   "name": "like-panoramix",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "EVM decompiler wrapper for Node.js",
   "main": "index.js",
   "scripts": {
