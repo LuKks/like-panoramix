@@ -8,7 +8,7 @@ test('basic', async function (t) {
 
   const panoramix = new Panoramix({ provider: PROVIDER })
 
-  const busd = await panoramix.run('0xe9e7cea3dedca5984780bafc599bd69add087d56')
+  const busd = await panoramix.run('0x55d398326f99059fF775485246999027B3197955')
   t.ok(busd.includes('def name() payable:'))
 
   await panoramix.close()
@@ -29,7 +29,7 @@ test('close', async function (t) {
   t.plan(2)
 
   const panoramix = new Panoramix({ provider: PROVIDER })
-  const running = panoramix.run('0xe9e7cea3dedca5984780bafc599bd69add087d56')
+  const running = panoramix.run('0x55d398326f99059fF775485246999027B3197955')
   const closing = panoramix.close()
 
   try {
@@ -41,7 +41,7 @@ test('close', async function (t) {
   await closing
 
   try {
-    await panoramix.run('0xe9e7cea3dedca5984780bafc599bd69add087d56')
+    await panoramix.run('0x55d398326f99059fF775485246999027B3197955')
   } catch (err) {
     t.is(err.message, 'Panoramix is closed')
   }

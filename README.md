@@ -18,9 +18,9 @@ const panoramix = new Panoramix({
   provider: 'https://bsc-dataseed.binance.org'
 })
 
-const output = await panoramix.run('0xe9e7cea3dedca5984780bafc599bd69add087d56')
-console.log('BUSD', output) /* =>
-busd def storage:
+const output = await panoramix.run('0x55d398326f99059fF775485246999027B3197955')
+console.log('USDT', output) /* =>
+def storage:
   owner is addr at storage 0
   balanceOf is mapping of uint256 at storage 1
   ...
@@ -51,6 +51,10 @@ Available `options`:
   provider // RPC provider
 }
 ```
+
+#### `panoramix.workers`
+
+Map that contains active workers.
 
 #### `const sourcecode = await panoramix.run(contractAddress)`
 
